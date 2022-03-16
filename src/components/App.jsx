@@ -37,10 +37,10 @@ export default class App extends Component {
   }
 
   render() {
-    const { pokemons } = this.state; 
-    const { name } = this.state.pokemon;
+    const { pokemons, pokemon } = this.state; 
+    const { name } = pokemon;
     return (
-      <div style={{ display: "flex" }}>
+      <div className='app'>
         <div className="container">
           <img id="pokemonImg" src={`https://assets.pokemon.com/assets/cms2/img/pokedex/full/${this.getPokemon()}.png`} alt={name} />
           <p id="name">{`${name} is a pokemon type ${this.getTypes()}`}</p>

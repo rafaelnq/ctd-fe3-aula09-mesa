@@ -2,6 +2,10 @@ body{
   background-color: black;
 }
 
+.app {
+  display: flex;
+}
+
 .container {
   background: url("../images/pokedex.jpg") black;
   background-repeat: no-repeat;
@@ -25,4 +29,30 @@ body{
   display: flex;
   flex-wrap: wrap;
   font-size: 20px;
+}
+
+.pokeContainer {
+  width: 50%;
+  background: red;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pokeList {
+  border:3px solid black;
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+  width: 500px;
+}
+
+.pokeOption {
+  margin:10px; 
+  padding:5px; 
+  cursor:pointer; 
+  border:2px solid yellow;
+  background-color: black;
+  color: white;
 }
